@@ -6,4 +6,6 @@
 
 * Clicar em "default" e em "Queue/Topics"
 
-* Escolher "Add" e inserir as configurações (Name e JNDI Names)
+* Escolher "Add" e inserir as configurações
+  * Name: `DM110Queue`
+  * JNDI Names: `java:/jms/queue/dm110queue`
