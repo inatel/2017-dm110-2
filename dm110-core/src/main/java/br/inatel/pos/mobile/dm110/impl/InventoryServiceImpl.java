@@ -14,8 +14,8 @@ public class InventoryServiceImpl implements InventoryService {
 	private InventoryRemote inventoryBean;
 
 	@Override
-	public void addNewProduct(String productName) {
-		inventoryBean.addNewProduct(productName);
+	public void addNewProduct(ProductTO product) {
+		inventoryBean.addNewProduct(product);
 	}
 
 	@Override
