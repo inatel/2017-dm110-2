@@ -4,6 +4,10 @@
 
 Criar uma aplicação capaz de fazer a varredura de uma rede de computadores para identificar os equipamentos que estão ativos, dada uma faixa de IP (endereço de rede/máscara CIDR).
 
+### Observação
+
+Para ativar o suporte a JMS no WildFly, verifique o [Guia de Configuração do JMS](../guides/queueconfig.md) publicado neste repositório.
+
 ## Interface de serviço
 
 ### Comando de início de varredura:

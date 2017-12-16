@@ -4,7 +4,7 @@
 
 Para criação de filas ou tópicos JMS, é necessário subir o WildFly no modo standoalone-full. Para isso, execute os procedimentos abaixo:
 
-* Localize os arquivo `standalone.xml` e `standalone-full.xml` em: `${WildFlyHomeDir}/standalone/configuration`
+* Localize os arquivos `standalone.xml` e `standalone-full.xml` em: `${WildFlyHomeDir}/standalone/configuration`
 
 * Copie os trechos delimtados pela tag `<datasources></datasources>` do arquivo `standalone.xml` para o arquivo `standalone-full.xml`, substituindo o trecho delimitado pela mesma tag no segundo arquivo.
   * Fazendo isso, você estará levando as configurações de DataSource e driver JDBC do primeiro arquivo para o segundo.
