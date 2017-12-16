@@ -1,12 +1,15 @@
 package br.inatel.pos.mobile.dm110.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "product")
 @SequenceGenerator(name = "seq_product", sequenceName = "seq_product", allocationSize = 1)
 public class Product {
 
@@ -14,7 +17,10 @@ public class Product {
 	@GeneratedValue(generator = "seq_product", strategy = GenerationType.SEQUENCE)
 	private Integer id;
 
+	@Column(name = "name")
 	private String name;
+
+	@Column(name = "quantity")
 	private Integer quantity;
 
 	public Integer getId() {
