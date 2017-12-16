@@ -1,0 +1,53 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Inventory",
+		"_postman_id": "5320509a-25ec-27ef-3b09-76f27a5c05f8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List all products",
+			"request": {
+				"url": "http://localhost:8081/dm110/api/inventory/product/all",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List product names",
+			"request": {
+				"url": "http://localhost:8081/dm110/api/inventory/product/names",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add new product",
+			"request": {
+				"url": "http://localhost:8081/dm110/api/inventory/product",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Sabão\",\n\t\"quantity\": 20\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
